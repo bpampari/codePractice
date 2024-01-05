@@ -28,8 +28,8 @@ public class ExtractDigitAndSumFromString {
 				tempStr = "0";
 			}
 		}
-		
-		System.out.println(newSum+Integer.parseInt(tempStr));
+
+		System.out.println(newSum + Integer.parseInt(tempStr));
 
 	}
 
