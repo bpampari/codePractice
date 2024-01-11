@@ -30,7 +30,18 @@ public class ExtractDigitAndSumFromString {
 		}
 
 		System.out.println(newSum + Integer.parseInt(tempStr));
-
+		
+		
+		//Other way
+		String str3 = "1abc2x30yz67";
+		String newStr =  str3.replaceAll("[a-zA-Z]+", " ");
+		String[] strArray = newStr.split(" ");
+		int sum1 =0;
+		for(int i =0;i<strArray.length;i++) {
+			sum1 = sum1+Integer.parseInt(strArray[i]);
+		}
+		
+		System.out.println("3rd Sol "+sum1);
 	}
 
 }
